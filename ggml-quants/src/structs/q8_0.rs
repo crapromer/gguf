@@ -11,8 +11,8 @@ pub struct Q8_0 {
 impl_data_block! {
     Q8_0 = crate::types::Q8_0;
     Self {
-        delta: f16::ZERO,
-        quants: [0; _32],
+        pub delta: f16::ZERO,
+        pub quants: [0; _32],
     }
 }
 
