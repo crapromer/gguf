@@ -4,15 +4,15 @@ use half::f16;
 
 #[repr(C)]
 pub struct Q8_0 {
-    delta: f16,
-    quants: [i8; _32],
+    pub delta: f16,
+    pub quants: [i8; _32],
 }
 
 impl_data_block! {
     Q8_0 = crate::types::Q8_0;
     Self {
-        pub delta: f16::ZERO,
-        pub quants: [0; _32],
+        delta: f16::ZERO,
+        quants: [0; _32],
     }
 }
 
